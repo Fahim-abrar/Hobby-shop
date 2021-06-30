@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './Card'
+import {useStateValue} from './StateProvider/StateProvider'
 
 function App() {
+  const [state, dispatch] = useStateValue()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {state.product.map((product) => <Card
+        title={product.title}
+        imageUrl={product.imageUrl}
+        body={product.body}
+      />)}
+
     </div>
   );
 }

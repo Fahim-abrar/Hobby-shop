@@ -10,6 +10,7 @@ function App() {
     
     <div className="App">
     <Navbar/>
+    <h4 className="catagories">Categories</h4>
       {state.product.map((product) => <Card
         title={product.title}
         imageUrl={product.imageUrl}

@@ -14,7 +14,8 @@ function App() {
       <Switch>
         <Route path="/customer">
         <Navbar/>
-          <Customer />      
+          <Customer /> 
+          <Footer/>    
         </Route>
         <Route path="/">
           <div className="App">

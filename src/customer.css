@@ -1,13 +1,24 @@
+.customer{
+    height:82vh;
+    display:flex;
+  
+}
+
 .customer-name{
-    width:50vw;
-    font-size: 50vh;
+    
     background-color: rgba(196, 196, 196, 0.21);
-    display: flex;
-    justify-content:row;
+    flex:0.5;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    margin-right: 3vw;
+    
 }
 
 .customer-card{
     background-color:cornsilk;
-    width:50vw;
-    height: 50vh;
+    width:5vw;
+    height: 5vh;
+    flex:0.5;
+    margin-left:3vw;
+    margin-top: 5vh;
 }

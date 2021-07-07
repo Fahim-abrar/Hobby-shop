@@ -5,7 +5,7 @@
 }
 
 .customer-name{
-    
+
     background-color: rgba(196, 196, 196, 0.21);
     flex:0.5;
     margin-top: 10vh;
@@ -15,10 +15,32 @@
 }
 
 .customer-card{
-    background-color:cornsilk;
     width:5vw;
     height: 5vh;
     flex:0.5;
     margin-left:3vw;
     margin-top: 5vh;
+}
+.customer-title{
+    font-size:25px;
+}
+.customer-body{
+    margin-top: 10vh;
+    font-size:3vh;
+    padding-top: 1vh;
+    
+}
+.customer-info{
+    padding-top: 3vh;
+}
+.bton{
+    padding: 0.5rem;
+    background-color: #fff;
+    border: none;
+    transition: 0.2s;
+    margin-bottom: 0.5rem;
+    border-radius: 3px;  
+}
+.customer-password{
+    font-size:25px;
 }

@@ -11,6 +11,8 @@
     font-size: 2vw;
     font-family: 'Times New Roman', Times, serif;
     margin-left: 1vw;
+    color: black;
+    text-decoration: none;
    
 }
 .navbar-search{
@@ -51,6 +53,8 @@
 .navbar-customer{
     padding-left: 2vw;
     padding-left: 2vw;
+    text-decoration: none;
+    color: black;
     
     
 }

@@ -4,13 +4,19 @@ import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import FaceIcon from '@material-ui/icons/Face';
 import NotificationsIcon from '@material-ui/icons/Notifications';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function Navbar() {
   return (
     <div className="navbar">
-      <div className="navbar-header">
+      <Link to="/" className="navbar-header">
         <h3 href="/home">Hobby Shop</h3>
-      </div>
+      </Link>
       <div className="navbar-search">
         <input type="text" className="navbar__searchInput" placeholder="Search" />
         <SearchIcon className="navbar__searchIcon" />
@@ -18,9 +24,9 @@ function Navbar() {
       <div className="navbar-basket">
           <ShoppingBasketIcon/>
       </div>
-      <div className="navbar-customer">
+      <Link to= "/customer" className="navbar-customer">
           <FaceIcon/>
-      </div>
+      </Link>
       <div className="navbar-bell">
           <NotificationsIcon/>
       </div>

@@ -1,0 +1,19 @@
+.footer{
+    margin-top:8vh;
+    width: 100vw;
+    height: 5vh;
+    background-color:#D6CCCC;
+    display: flex;
+    margin-top:1vh;
+    justify-content: space-between;
+    
+}
+.footer-home{
+    margin-left: 2vw;
+}
+.footer-about{
+    margin-right: 5vw;
+}
+.footer-contact-us{
+    margin-right: 5vw;
+}

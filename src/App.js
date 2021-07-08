@@ -6,12 +6,26 @@ import Navbar from './Navbar.js'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Customer from "./Customer.js";
 import Footer from "./Footer.js";
+import Register from "./Register.js";
+import Signin from "./Signin.js";
+import Aboutus from "./Aboutus.js";
 
 function App() {
   const [state, dispatch] = useStateValue();
   return (
     <Router>
       <Switch>
+      <Route path="/Register">
+          <Register/>
+        </Route>
+        <Route path="/Signin">
+          <Signin/>
+        </Route>
+        <Route path="/Aboutus">
+        <Navbar/>
+          <Aboutus/>
+          <Footer/>
+        </Route>
         <Route path="/customer">
         <Navbar/>
           <Customer /> 

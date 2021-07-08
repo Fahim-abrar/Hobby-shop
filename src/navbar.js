@@ -14,7 +14,7 @@ import {
 function Navbar() {
   return (
     <div className="navbar">
-      <Link to="/" className="navbar-header">
+      <Link to="/Aboutus" className="navbar-header">
         <h3 href="/home">Hobby Shop</h3>
       </Link>
       <div className="navbar-search">

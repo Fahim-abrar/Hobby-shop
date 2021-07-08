@@ -8,7 +8,7 @@
 
     background-color: rgba(196, 196, 196, 0.21);
     flex:0.5;
-    margin-top: 10vh;
+    margin-top: 15vh;
     margin-bottom: 5vh;
     margin-right: 3vw;
     
@@ -19,15 +19,16 @@
     height: 5vh;
     flex:0.5;
     margin-left:3vw;
-    margin-top: 5vh;
+    margin-top: 6vh;
 }
 .customer-title{
-    font-size:25px;
+    font-size:35px;
 }
 .customer-body{
     margin-top: 10vh;
     font-size:3vh;
     padding-top: 1vh;
+    padding-bottom: 2vh;
     
 }
 .customer-info{
@@ -35,12 +36,74 @@
 }
 .bton{
     padding: 0.5rem;
-    background-color: #fff;
+    background-color:white;
     border: none;
     transition: 0.2s;
     margin-bottom: 0.5rem;
     border-radius: 3px;  
 }
 .customer-password{
-    font-size:25px;
+    padding: 0.5rem;
+    background-color: #fff;
+    border: none;
+    transition: 0.2s;
+    margin-bottom: 0.5rem;
+    border-radius: 3px;  
+}
+.customer-namestyle{
+    height: 40vh;
+    margin-left: 3vw;
+    margin-top: 5vh;
+    justify-content:space-evenly;
+    font-size:30px;
+}
+.customer-Settings{
+    padding-top: 1vh;
+    padding-bottom:1vh;
+}
+.customer-Categories{
+    padding-top: 1vh;
+    padding-bottom:1vh;
+    text-decoration: none;
+    color:black;
+}
+.customer-myorders{
+    padding-top: 1vh;
+    padding-bottom:1vh;
+}
+.customer-wishlist{
+    padding-top: 1vh;
+    padding-bottom:1vh;
+}
+.customer-ratings{
+    padding-top: 1vh;
+    padding-bottom:1vh;
+}
+.customer-notification{
+    padding-top: 1vh;
+    padding-bottom:1vh;
+}
+.customer-settings{
+    padding-top: 1vh;
+    padding-bottom:1vh;
+}
+.customer-logout{
+    padding-top: 1vh;
+    padding-bottom:1vh;
+}
+.customer-right{
+    display: flex;
+}
+.customer-body{
+    width: 20vw;
+}
+.customer-avatar{
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.customer-topup{
+    margin-top: -13vh; 
 }

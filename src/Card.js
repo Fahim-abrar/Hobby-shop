@@ -1,5 +1,12 @@
 import React from 'react'
 import './Card.css'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+  
 
 function Card({title,imageUrl,body}) {
     return (
@@ -16,13 +23,13 @@ function Card({title,imageUrl,body}) {
                 </div>
             </div>
 
-          <div className='btn'>
+          <Link to= {`/Products/${title}`} className='btn'>
               <button>
                   <a>
                       View more
                   </a>
               </button>
-          </div>
+          </Link>
             
         </div>
     )

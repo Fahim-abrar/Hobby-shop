@@ -1,0 +1,47 @@
+.ppage{
+    height:100%;
+    width:100vw;
+}
+.ppage-corner{
+    margin-left:3vw;
+}
+.ppage-header{
+    margin-left: 20vw;
+    font-size:38px;
+    margin-top:2vh;
+}
+.ppage-img{
+    margin-left:21vw;
+    margin-top:4vh;
+}
+.ppage-text{
+    margin-left:21vw;
+    font-size:20px;
+    padding-top: 1vh;
+}
+.ppage-taka{
+    margin-left:21vw;
+    padding-top: 1vh;
+}
+.ppage-rating{
+    margin-left:21vw;
+    padding-top: 1vh;
+}
+.ppage-desc{
+    margin-left:21vw;
+    padding-top: 1vh;
+}
+.ppage-cartbtn{
+    height:3vh;
+    width:5vw;
+    margin-left:21vw;
+    padding-top: 1vh;
+    background-color:rgba(255, 172, 137, 0.09)
+}
+.ppage-wishlist{
+    height:3vh;
+    width:7vw;
+    margin-left:21vw;
+    padding-top: 1vh;
+    background-color:rgba(255, 172, 137, 0.09)
+}

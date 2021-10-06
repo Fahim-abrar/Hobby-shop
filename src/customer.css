@@ -7,11 +7,18 @@
 .customer-name{
 
     background-color: rgba(196, 196, 196, 0.21);
-    flex:0.5;
-    margin-top: 15vh;
+    flex:0.3;
+    margin-top: 20vh;
     margin-bottom: 5vh;
     margin-right: 3vw;
+    margin-left: 8vw;
+    height: 50vh;
     
+    
+}
+.customer_content{
+    background-color: rgba(218, 216, 216, 0.21);
+    height:65vh;
 }
 
 .customer-card{
@@ -20,9 +27,19 @@
     flex:0.5;
     margin-left:3vw;
     margin-top: 6vh;
+    
+}
+.customer-nameoftop{
+    font-size:20px;
+    height: 5vh;
+    width:10vw;
+    margin-left:10vw;
+    margin-top: -6vh;
+    
 }
 .customer-title{
     font-size:35px;
+  
 }
 .customer-body{
     margin-top: 10vh;
@@ -36,7 +53,6 @@
 }
 .bton{
     padding: 0.5rem;
-    background-color:white;
     border: none;
     transition: 0.2s;
     margin-bottom: 0.5rem;
@@ -44,7 +60,6 @@
 }
 .customer-password{
     padding: 0.5rem;
-    background-color: #fff;
     border: none;
     transition: 0.2s;
     margin-bottom: 0.5rem;
@@ -53,7 +68,7 @@
 .customer-namestyle{
     height: 40vh;
     margin-left: 3vw;
-    margin-top: 5vh;
+    margin-top: 10vh;
     justify-content:space-evenly;
     font-size:30px;
 }
@@ -88,7 +103,7 @@
     padding-bottom:1vh;
 }
 .customer-logout{
-    padding-top: 1vh;
+    padding-top: 5vh;
     padding-bottom:1vh;
 }
 .customer-right{
@@ -106,4 +121,10 @@
 }
 .customer-topup{
     margin-top: -13vh; 
+}
+.customer-title{
+    margin-left: 4vw;
+}
+.customer-right{
+    margin-left: 4vw;
 }

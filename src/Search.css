@@ -1,0 +1,10 @@
+.Search{
+    display:flex;
+    flex-direction:row;
+}
+.Search-left{
+    background-color: aqua;
+}
+.Search-right{
+    
+}

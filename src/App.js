@@ -9,6 +9,12 @@ import Footer from "./Footer.js";
 import Register from "./Register.js";
 import Signin from "./Signin.js";
 import Aboutus from "./Aboutus.js";
+import NotiPage from "./NotiPage.js";
+import Inproduct from "./Inproduct.js";
+import Basket from "./Basket.js";
+import Ppage from "./Ppage.js";
+import Checkout from "./Checkout.js";
+import Search from "./Search.js";
 
 function App() {
   const [state, dispatch] = useStateValue();
@@ -26,10 +32,40 @@ function App() {
           <Aboutus/>
           <Footer/>
         </Route>
+        <Route path="/NotiPage">
+        <Navbar/>
+        <NotiPage/>
+          <Footer/>
+        </Route>
         <Route path="/customer">
         <Navbar/>
           <Customer /> 
           <Footer/>    
+        </Route>
+        <Route path="/basket">
+        <Navbar/>
+          <Basket /> 
+          <Footer/>    
+        </Route>
+        <Route path="/Ppage">
+        <Navbar/>
+          <Ppage /> 
+          <Footer/>    
+        </Route>
+        <Route path="/Products/:category">
+        <Navbar/>
+          <Inproduct/>
+          <Footer/> 
+        </Route>
+        <Route path="/Checkout">
+        <Navbar/>
+          <Checkout/>
+          <Footer/>
+        </Route>
+        <Route path="/Search">
+        <Navbar/>
+          <Search/>
+          <Footer/>
         </Route>
         <Route path="/">
           <div className="App">

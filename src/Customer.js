@@ -2,11 +2,7 @@ import React from "react";
 import "./customer.css";
 import Aboutusimg from "./Images/Aboutusimg.jpg"
 import Avatar from '@material-ui/core/Avatar';
-import {
-  BrowserRouter as Router,
-  Link
-} from "react-router-dom";
-
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function Customer() {
   return (
@@ -15,8 +11,9 @@ function Customer() {
         <div className="customer-topup">
           <Avatar src={Aboutusimg} style={{ height: "10vh", width: "7vw" }} />
         </div>
+        <div className="customer-nameoftop">User Name</div>
+
         <div className="customer-namestyle">
-          <div className="customer-Settings">Settings</div>
           <Link to="/" className="customer-Categories">
             Categories
           </Link>
@@ -24,7 +21,7 @@ function Customer() {
           <div className="customer-wishlist">Wishlist</div>
           <div className="customer-ratings">My ratings & My reviews</div>
           <div className="customer-notification">Notifications</div>
-          <div className="customer-settings">Setting</div>
+
           <div className="customer-logout">Logout</div>
         </div>
       </div>

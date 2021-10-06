@@ -9,6 +9,7 @@
 
 .navbar-header{
     font-size: 2vw;
+    flex: 1;
     font-family: 'Times New Roman', Times, serif;
     margin-left: 1vw;
     color: black;
@@ -29,7 +30,7 @@
     width: 25vw;
     height: 3vh;
     border: none;
-    border-radius:1vw;
+    border-radius:.2vw;
     outline: none;
     background-color:burlywood;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -41,25 +42,21 @@
 }
 .navbar__searchIcon{
     width:10vw;
-    margin-left: -2vw;
+    margin-left:0vw;
     background-color:burlywood;
 
 }
 .navbar-basket{
     
-    margin-left: 6vw;
-    padding-left: 5vw;
-}
-.navbar-customer{
-    padding-left: 2vw;
-    padding-left: 2vw;
-    text-decoration: none;
+    margin-left: 5vw;
+    padding-left: 15vw;
     color: black;
-    
+}
+.navbar-icons{
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
     
 }
-.navbar-bell{
-    
-    margin-right:6vw;
-    padding-right:5vw;
-}
+

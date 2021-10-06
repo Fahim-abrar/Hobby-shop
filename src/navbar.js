@@ -3,6 +3,7 @@ import "./navbar.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import FaceIcon from '@material-ui/icons/Face';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import {
   BrowserRouter as Router,
@@ -18,19 +19,24 @@ function Navbar() {
         <h3 href="/home">Hobby Shop</h3>
       </Link>
       <div className="navbar-search">
+      <SearchIcon className="navbar__searchIcon" style={{height:"3.15vh"}}/>
         <input type="text" className="navbar__searchInput" placeholder="Search" />
-        <SearchIcon className="navbar__searchIcon" />
+        
       </div>
-      <div className="navbar-basket">
+      <div className="navbar-icons">
+      <Link to="/basket" className="navbar-basket" style={{color:"black", paddingRight:"1vw"}}>
           <ShoppingBasketIcon/>
-      </div>
-      <Link to= "/customer" className="navbar-customer">
+      </Link>
+      <Link to= "/customer" className="navbar-customer" style={{color:"black", paddingRight:"1vw"}}>
           <FaceIcon/>
       </Link>
-      <div className="navbar-bell">
+      <Link to= "/Notipage" className="navbar-bell" style={{color:"black", paddingRight:"1vw"}}>
           <NotificationsIcon/>
-      </div>
-
+      </Link>
+      <Link to="/Signin" className="navbar-signinlogo" style={{color:"black", paddingRight:"1vw"}}>
+           <AccountCircleIcon/>
+      </Link>
+       </div>
     </div>
   );
 }

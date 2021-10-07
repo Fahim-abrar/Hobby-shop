@@ -47,7 +47,7 @@ function App() {
           <Basket /> 
           <Footer/>    
         </Route>
-        <Route path="/Ppage">
+        <Route path="/ppage/:category">
         <Navbar/>
           <Ppage /> 
           <Footer/>    
@@ -62,7 +62,7 @@ function App() {
           <Checkout/>
           <Footer/>
         </Route>
-        <Route path="/Search">
+        <Route path="/Search/:search">
         <Navbar/>
           <Search/>
           <Footer/>

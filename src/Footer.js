@@ -11,12 +11,12 @@ function Footer() {
         <Link to="/" className="footer-home">
           <h3>Home</h3>
         </Link>
-        <Link to= "/Aboutus" className="footer-about">
+        <Link to="/Aboutus" className="footer-about">
           <h3>About </h3>
         </Link>
-        <div className="footer-contact-us">
+        <Link to="/Search" className="footer-contact-us">
           <h3> Contact us</h3>
-        </div>
+        </Link>
       </div>
     );
 }

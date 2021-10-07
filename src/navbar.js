@@ -1,10 +1,11 @@
-import React from "react";
+import React,{useState} from "react";
 import "./navbar.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import FaceIcon from '@material-ui/icons/Face';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import NotificationsIcon from '@material-ui/icons/Notifications';
+import { useHistory } from "react-router-dom";
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,14 +14,20 @@ import {
 } from "react-router-dom";
 
 function Navbar() {
+  let history = useHistory();
+  const [search,setSearch]=useState("")
+  const clickIcon = () => {history.push(`/Search/${search}`)}
+  const changeInput = (e) => {setSearch(e.target.value)}
   return (
     <div className="navbar">
       <Link to="/Aboutus" className="navbar-header">
         <h3 href="/home">Hobby Shop</h3>
       </Link>
       <div className="navbar-search">
+      <div onClick={clickIcon} className="navbar-iconcontainer">
       <SearchIcon className="navbar__searchIcon" style={{height:"3.15vh"}}/>
-        <input type="text" className="navbar__searchInput" placeholder="Search" />
+      </div>
+        <input value= {search} onChange={changeInput} type="text" className="navbar__searchInput" placeholder="Search" />
         
       </div>
       <div className="navbar-icons">

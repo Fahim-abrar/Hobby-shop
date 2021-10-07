@@ -23,7 +23,7 @@ function Card({title,imageUrl,body}) {
                 </div>
             </div>
 
-          <Link to= {`/Products/${title}`} className='btn'>
+          <Link to= {`/ppage/${title}`} className='btn'>
               <button>
                   <a>
                       View more

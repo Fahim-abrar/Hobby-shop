@@ -30,7 +30,9 @@ function Search() {
                 Categories
               </Link>
               <div className="Search-myorders">My Orders </div>
-              <div className="Search-wishlist">Wishlist</div>
+              <Link to="/Wishlist" className="Search-Categories">
+                Wishlist
+              </Link>
               <div className="Search-ratings">My ratings & My reviews</div>
               <div className="Search-notification">Notifications</div>
 

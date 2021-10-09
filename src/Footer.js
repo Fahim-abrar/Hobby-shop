@@ -14,7 +14,7 @@ function Footer() {
         <Link to="/Aboutus" className="footer-about">
           <h3>About </h3>
         </Link>
-        <Link to="/Search" className="footer-contact-us">
+        <Link  className="footer-contact-us">
           <h3> Contact us</h3>
         </Link>
       </div>

@@ -59,6 +59,13 @@
     
     
 }
+.checkout-shippingaddressfeild{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+    
+}
 .checkout-contactdetails{
     margin-left: 3vw;
     

@@ -36,16 +36,12 @@ function Customer() {
               <div className="customer-info">Last Name:</div>
               <div className="customer-info">Email:</div>
 
-              <div className="bton">
-                <button>
-                  <a>Change Password</a>
-                </button>
-              </div>
-              <div className="customer-password">
+              
+              <Link to="/Editprofile" className="customer-password">
                 <button>
                   <a>Edit profile</a>
                 </button>
-              </div>
+              </Link>
             </div>
             <div className="customer-avatar">
               <Avatar

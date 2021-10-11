@@ -16,6 +16,7 @@ import Ppage from "./Ppage.js";
 import Checkout from "./Checkout.js";
 import Search from "./Search.js";
 import Wishlist from "./Wishlist.js";
+import Editprofile from './Editprofile';
 
 function App() {
   const [state, dispatch] = useStateValue();
@@ -71,6 +72,11 @@ function App() {
         <Route path="/Wishlist">
         <Navbar/>
           <Wishlist/>
+          <Footer/>
+        </Route>
+        <Route path="/Editprofile">
+        <Navbar/>
+          <Editprofile/>
           <Footer/>
         </Route>
         <Route path="/">

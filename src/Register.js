@@ -27,6 +27,7 @@ function Register() {
       confirm_password: RetypePassword,
     };
     register(body).then((response) => {
+      console.log(response);
       if (response.success) {
         alert(response.message);
         history.push("/login");

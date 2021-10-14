@@ -18,6 +18,8 @@ function Navbar() {
   const [search,setSearch]=useState("")
   const clickIcon = () => {history.push(`/Search/${search}`)}
   const changeInput = (e) => {setSearch(e.target.value)}
+  const user = JSON.parse(sessionStorage.getItem('jwt'));
+  console.log(user);
   return (
     <div className="navbar">
       <Link to="/Aboutus" className="navbar-header">
@@ -30,7 +32,8 @@ function Navbar() {
         <input value= {search} onChange={changeInput} type="text" className="navbar__searchInput" placeholder="Search" />
         
       </div>
-      <div className="navbar-icons">
+
+      { user? <div className="navbar-icons">
       <Link to="/basket" className="navbar-basket" style={{color:"black", paddingRight:"1vw"}}>
           <ShoppingBasketIcon/>
       </Link>
@@ -43,7 +46,10 @@ function Navbar() {
       <Link to="/Signin" className="navbar-signinlogo" style={{color:"black", paddingRight:"1vw"}}>
            <AccountCircleIcon/>
       </Link>
-       </div>
+       </div>:
+       <Link to="/Signin" className="navbar-signinlogo" style={{color:"black", paddingRight:"1vw"}}>
+           <AccountCircleIcon/>
+      </Link> } 
     </div>
   );
 }

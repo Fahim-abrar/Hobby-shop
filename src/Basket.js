@@ -20,7 +20,7 @@ function Basket() {
             Categories
           </Link>
           <div className="basket-myorders">My Orders </div>
-          <div className="basket-wishlist">Wishlist</div>
+          <Link to="Wishlist" className="basket-wishlist">Wishlist</Link>
           <div className="basket-ratings">My ratings & My reviews</div>
           <div className="basket-notification">Notifications</div>
 

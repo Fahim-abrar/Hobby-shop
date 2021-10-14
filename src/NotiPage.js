@@ -20,9 +20,8 @@ function NotiPage() {
               Categories
             </Link>
             <div className="noti-myorders">My Orders </div>
-            <div className="noti-wishlist">Wishlist</div>
+            <Link to="Wishlist" className="noti-wishlist">Wishlist</Link>
             <div className="noti-ratings">My ratings & My reviews</div>
-            <div className="noti-notification">Notifications</div>
             <div className="noti-logout">Logout</div>
           </div>
         </div>

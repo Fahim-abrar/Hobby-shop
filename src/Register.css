@@ -38,13 +38,12 @@
 
 }
 .Register-input{
-    width: 15vw;
-    height:2vh;
+    width: 23vw;
+    height:2.5vh;
     outline: none;
     border: none;
     border-radius: 0.5em;
     background-color: rgb(190, 246, 253);
-
 }
 .Register-btn{
     margin-top: 4vh;
@@ -65,7 +64,7 @@
 .Register-redirect{
     text-decoration: none;
     color:black;
-    margin-top: 4vh;
+    margin-top:1vh;
     height:3vh;
     width: 8vw;
     background-color:rgb(138, 200, 211);

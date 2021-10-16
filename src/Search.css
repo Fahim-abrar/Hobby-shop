@@ -30,6 +30,8 @@
     margin-top: 10vh;
     justify-content:space-evenly;
     font-size:30px;
+     display: flex;
+    flex-direction: column;
 }
 .Search-Categories{
     padding-top: 1vh;

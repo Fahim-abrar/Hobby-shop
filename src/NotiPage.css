@@ -22,6 +22,8 @@
     margin-top: 8vh;
     justify-content:space-evenly;
     font-size:30px;
+    display: flex;
+    flex-direction: column;
 }
 .noti-logout{
     margin-top:5vh;

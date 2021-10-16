@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from "react";
 import "./customer.css";
-import Aboutusimg from "./Images/Aboutusimg.jpg"
 import Avatar from '@material-ui/core/Avatar';
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import {useHistory} from 'react-router-dom'
@@ -20,6 +19,7 @@ function Customer() {
     const formData = new FormData();
     formData.append('image', event.target.files[0]);
     formData.append('email', user.email);
+    console.log(formData);
     update(formData).then(
       (response) => {
         console.log(response);
@@ -50,13 +50,13 @@ function Customer() {
         <div className="customer-nameoftop">{user.firstname}{" "} {user.lastname}</div>
 
         <div className="customer-namestyle">
-          <Link to="/" className="customer-Categories">
+        <Link to="/" className="customer-Categories">
             Categories
           </Link>
-          <div className="customer-myorders">My Orders </div>
-          <Link to="Wishlist" className="customer-wishlist">Wishlist</Link>
-          <div className="customer-ratings">My ratings & My reviews</div>
-          <div className="customer-notification">Notifications</div>
+          <Link to="/Myorder" style={{ textDecoration:"none",fontSize:"25px" }} className="customer-myorders">My Orders </Link>
+          <Link to="/Wishlist" style={{ textDecoration:"none",fontSize:"25px" }} className="customer-wishlist">Wishlist</Link>
+          <Link to="/Rating" style={{ textDecoration:"none",fontSize:"25px" }}  className="customer-ratings">My ratings & My reviews</Link>
+          <Link to="/NotiPage" style={{ textDecoration:"none",fontSize:"25px" }}  className="customer-notification">Notifications</Link>
 
           <div onClick={()=>{sessionStorage.removeItem('jwt'); history.push("/") }} className="customer-logout">Logout</div>
 
@@ -73,12 +73,20 @@ function Customer() {
               <div className="customer-info">Last Name:  {user.lastname}</div>
               <div className="customer-info">Email:  {user.email}</div>
 
-              
-              <Link to="/Editprofile" className="customer-password">
+              <div className="customer-lower">
+              <Link to="/customer" className="customer-password">
                 <button>
                   <a>Edit profile</a>
                 </button>
               </Link>
+              
+              <Link to="/Changepass" className="customer-password-1">
+                <button>
+                  <a>Change password</a>
+                </button>
+              </Link>
+              </div>
+
             </div>
             <div className="customer-avatar">
               <Avatar

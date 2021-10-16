@@ -4,10 +4,12 @@ import Avatar from "@material-ui/core/Avatar";
 import {useStateValue} from './StateProvider/StateProvider'
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import "./Search.css";
+import {useHistory} from 'react-router-dom'
 import { useParams } from 'react-router-dom';
 
 
 function Search() {
+  let history = useHistory();
   const [state, dispatch] = useStateValue();
   const {search}=useParams()
   let filteredProducts= state.Allproducts.filter(oneproduct => oneproduct.category===search);
@@ -26,17 +28,15 @@ function Search() {
             <div className="Search-nameoftop">User Name</div>
 
             <div className="Search-namestyle">
-              <Link to="/" className="Search-Categories">
-                Categories
-              </Link>
-              <div className="Search-myorders">My Orders </div>
-              <Link to="/Wishlist" className="Search-Categories">
-                Wishlist
-              </Link>
-              <div className="Search-ratings">My ratings & My reviews</div>
-              <div className="Search-notification">Notifications</div>
+            <Link to="/" className="Search-Categories">
+            Categories
+          </Link>
+          <Link to="/Myorder" style={{ textDecoration:"none",fontSize:"25px" }} className="Search-myorders">My Orders </Link>
+          <Link to="/Wishlist" style={{ textDecoration:"none",fontSize:"25px" }} className="Search-wishlist">Wishlist</Link>
+          <Link to="/Rating" style={{ textDecoration:"none",fontSize:"25px" }}  className="Search-ratings">My ratings & My reviews</Link>
+          <Link to="/NotiPage" style={{ textDecoration:"none",fontSize:"25px" }}  className="Search-notification">Notifications</Link>
 
-              <div className="Search-logout">Logout</div>
+          <div onClick={()=>{sessionStorage.removeItem('jwt'); history.push("/") }} className="Search-logout">Logout</div>
             </div>
           </div>
         </div>

@@ -59,7 +59,7 @@
     border-radius: 3px;  
 }
 .customer-password button{
-    margin-top: 7vh;
+    margin-top:  6vh;
     height: 5vh;
     width: 10vh;
     transition: 0.2s;
@@ -74,6 +74,8 @@
     margin-top: 10vh;
     justify-content:space-evenly;
     font-size:30px;
+    display: flex;
+    flex-direction: column;
 }
 .customer-Settings{
     padding-top: 1vh;
@@ -131,5 +133,19 @@
     margin-left: 4vw;
 }
 .customer-right{
+    margin-left: 4vw;
+}
+.customer-password-1 button{
+    margin-top: 9vh;
+    height: 5vh;
+    width: 10vh;
+    transition: 0.2s;
+    margin-bottom: 0.5rem;
+    border: none;
+    border: 2px solid #463e3e;
+    background-color:rgba(255, 172, 137, 0.22); 
+}
+.customer-password-1{
+    margin-top: 4vh;
     margin-left: 4vw;
 }

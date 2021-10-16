@@ -17,6 +17,8 @@
    
 }
 .navbar-search{
+    height:2.5vw;
+    width: 29vw;
     display: flex;
     align-items: center;
     margin-left:15vw;
@@ -42,7 +44,7 @@
 }
 .navbar__searchIcon{
     width:10vw;
-    margin-left:0vw;
+    margin-left:2vw;
     background-color:burlywood;
 
 }
@@ -58,5 +60,17 @@
     align-items: center;
     justify-content: space-between;
     
+}
+.logout-navbar-search{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vw;
+    margin-right: 25vw;
+    
+    
+}
+.navbar-login{
+    text-decoration: none;
+    margin-right: 5vw;
 }
 

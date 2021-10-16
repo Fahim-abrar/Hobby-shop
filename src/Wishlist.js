@@ -4,9 +4,12 @@ import Avatar from "@material-ui/core/Avatar";
 import { useStateValue } from "./StateProvider/StateProvider";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import "./Wishlist.css";
+import {useHistory} from 'react-router-dom'
 import { useParams } from "react-router-dom";
 
 function Wishlist() {
+  const user = JSON.parse(sessionStorage.getItem('jwt'));
+  let history = useHistory();
   return (
     <div>
       <div className="Wishlist">
@@ -14,21 +17,21 @@ function Wishlist() {
           <div className="Wishlist-name">
             <div className="Wishlist-topup">
               <Avatar
-                src={Aboutusimg}
+                src={`http://localhost:4000/${user.image}`}
                 style={{ height: "10vh", width: "7vw" }}
               />
             </div>
-            <div className="Wishlist-nameoftop">User Name</div>
+            <div className="Wishlist-nameoftop">{user.firstname}{" "} {user.lastname}</div>
 
             <div className="Wishlist-namestyle">
-              <Link to="/" className="Wishlist-Categories">
-                Categories
-              </Link>
-              <div className="Wishlist-myorders">My Orders </div>
-              <div className="Wishlist-ratings">My ratings & My reviews</div>
-              <div className="Wishlist-notification">Notifications</div>
+            <Link to="/" className="Editprofile-Categories">
+            Categories
+          </Link>
+          <Link to="/Myorder" style={{ textDecoration:"none",fontSize:"25px" }} className="Editprofile-myorders">My Orders </Link>
+          <Link to="/Rating" style={{ textDecoration:"none",fontSize:"25px" }}  className="Editprofile-ratings">My ratings & My reviews</Link>
+          <Link to="/NotiPage" style={{ textDecoration:"none",fontSize:"25px" }}  className="Editprofile-notification">Notifications</Link>
 
-              <div className="Wishlist-logout">Logout</div>
+          <div onClick={()=>{sessionStorage.removeItem('jwt'); history.push("/") }} className="Editprofile-logout">Logout</div>
             </div>
           </div>
         </div>

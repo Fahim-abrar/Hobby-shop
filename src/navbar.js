@@ -25,7 +25,7 @@ function Navbar() {
       <Link to="/Aboutus" className="navbar-header">
         <h3 href="/home">Hobby Shop</h3>
       </Link>
-      <div className="navbar-search">
+      <div className={`${user?' navbar-search':'logout-navbar-search'}`}>
       <div onClick={clickIcon} className="navbar-iconcontainer">
       <SearchIcon className="navbar__searchIcon" style={{height:"3.15vh"}}/>
       </div>
@@ -47,8 +47,8 @@ function Navbar() {
            <AccountCircleIcon/>
       </Link>
        </div>:
-       <Link to="/Signin" className="navbar-signinlogo" style={{color:"black", paddingRight:"1vw"}}>
-           <AccountCircleIcon/>
+       <Link to="/Signin" className="navbar-login" style={{color:"black", paddingRight:"1vw"}}>
+           Login
       </Link> } 
     </div>
   );

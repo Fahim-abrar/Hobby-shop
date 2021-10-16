@@ -18,6 +18,9 @@ import Search from "./Search.js";
 import Wishlist from "./Wishlist.js";
 import Editprofile from './Editprofile';
 import Addproduct from './Addproduct';
+import Rating from './Rating';
+import Myorder from './Myorder';
+import Changepass from './Changepass';
 
 function App() {
   const [state, dispatch] = useStateValue();
@@ -83,6 +86,21 @@ function App() {
         <Route path="/Addproduct">
         <Navbar/>
           <Addproduct/>
+          <Footer/>
+        </Route>
+        <Route path="/Rating">
+        <Navbar/>
+          <Rating/>
+          <Footer/>
+        </Route>
+        <Route path="/Myorder">
+        <Navbar/>
+          <Myorder/>
+          <Footer/>
+        </Route>
+        <Route path="/Changepass">
+        <Navbar/>
+          <Changepass/>
           <Footer/>
         </Route>
         <Route path="/">

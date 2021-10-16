@@ -2,29 +2,32 @@ import React from "react";
 import "./Basket.css";
 import Aboutusimg from "./Images/Aboutusimg.jpg";
 import Avatar from "@material-ui/core/Avatar";
+import {useHistory} from 'react-router-dom'
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
 
 function Basket() {
+  const user = JSON.parse(sessionStorage.getItem('jwt'));
+  let history = useHistory();
   return (
     <div classname="basket" style={{display:"flex", alignItems:"center",
     justifyContent:"space-around", minHeight:"82vh"}}>
       <div classname="basket-one" style={{ marginBottom:"19vh"}}>
         <div className="basket-topup">
-          <Avatar src={Aboutusimg} style={{ height: "10vh", width: "7vw" }} />
+          <Avatar src={`http://localhost:4000/${user.image}`} style={{ height: "10vh", width: "7vw" }} />
         </div>
-        <div className="basket-nameoftop">User Name</div>
+        <div className="basket-nameoftop">{user.firstname}{" "} {user.lastname}</div>
 
         <div className="basket-namestyle">
           <Link to="/" className="basket-Categories">
             Categories
           </Link>
-          <div className="basket-myorders">My Orders </div>
-          <Link to="Wishlist" className="basket-wishlist">Wishlist</Link>
-          <div className="basket-ratings">My ratings & My reviews</div>
-          <div className="basket-notification">Notifications</div>
+          <Link to="/Myorder" style={{ textDecoration:"none",fontSize:"25px" }} className="basket-myorders">My Orders </Link>
+          <Link to="/Wishlist" style={{ textDecoration:"none",fontSize:"25px" }} className="basket-wishlist">Wishlist</Link>
+          <Link to="/Rating" style={{ textDecoration:"none",fontSize:"25px" }}  className="basket-ratings">My ratings & My reviews</Link>
+          <Link to="/NotiPage" style={{ textDecoration:"none",fontSize:"25px" }}  className="basket-notification">Notifications</Link>
 
-          <div className="basket-logout">Logout</div>
+          <div onClick={()=>{sessionStorage.removeItem('jwt'); history.push("/") }} className="basket-logout">Logout</div>
         </div>
       </div>
       <div classname="basket-two" style={{display: "flex",flexDirection: "column"}} >
